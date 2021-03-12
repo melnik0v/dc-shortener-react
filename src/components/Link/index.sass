@@ -1,0 +1,30 @@
+.link-container
+  display: flex
+  flex-direction: column
+  width: 100%
+  align-items: center
+  justify-content: center
+  
+  .link
+    border: none
+    border-bottom: 2px solid #439fff
+    color: #094b68
+    text-align: center
+    font-size: 2em
+    outline: none
+    font-family: Helvetica Neue, Arial
+    font-weight: 300
+
+    animation: expand 1s ease-in alternate both
+
+    &::placeholder
+      color: #ccc
+
+  @keyframes expand
+    0%
+      padding: 10px 0
+      width: 0%
+    100%
+      padding: 10px 30%
+      width: 100%
+
